@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from idr_rag.allocation import hash_tie, precedence_ok
+from idr_rag.allocation import hash_tie, precedence_ok, summarize
 from idr_rag.features import FEATURE_NAMES
 from idr_rag.io import group_actions, read_csv
 from idr_rag.paper import policy_orders
@@ -31,6 +31,11 @@ class CoreInvariants(unittest.TestCase):
     def test_dpa_hash_is_deterministic(self):
         action = self.rows[0]
         self.assertEqual(hash_tie(action), hash_tie(dict(action)))
+
+    def test_locked_primary_aubpc(self):
+        orders = policy_orders(self.rows)
+        self.assertAlmostEqual(summarize(orders["IDR"])["AUBPC_0_50_pp"], 55.72222484567901, places=12)
+        self.assertAlmostEqual(summarize(orders["Depth-Prior Allocation"])["AUBPC_0_50_pp"], 48.24140663580247, places=12)
 
 
 if __name__ == "__main__":

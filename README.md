@@ -12,7 +12,7 @@ The main replay uses frozen numeric action ledgers and makes no network, retriev
 python -m venv .venv
 # activate .venv, then:
 python -m pip install -r requirements-lock.txt
-set PYTHONPATH=src
+python -m pip install -e . --no-deps
 python scripts/reproduce_main.py
 ```
 
@@ -27,7 +27,6 @@ IDR - DPA       =  7.480818209876539 percentage points
 ## Retrain the two released estimators
 
 ```bash
-set PYTHONPATH=src
 python scripts/train_models.py
 ```
 

@@ -1,5 +1,6 @@
 {
-  "status": "DPA_ONLY_DERIVED_CANDIDATE_NOT_MANUSCRIPT_SYNC",
+  "status": "PASS_CURRENT_ENGLISH_V38_M087",
+  "evidence_id": "M-087",
   "input_hashes": {
     "01_MAIN_TABLE/IDR_ACTIONS.csv": "04f6ba520260d9dcb4b776d8b898fb728132a30a7ee8a661434e2630e805170e",
     "04_RESOURCES/DPA_TIE_BOOTSTRAP.csv": "e6506cb2ee4adf16fa901dbdd0062158846d8d8cd62f23ed34cb6e8419d63f7a",
@@ -8,7 +9,7 @@
   "script_sha256": "a691241db3ac5422049e4871ffc4b68b21f569a761ef1b66bb5b3fce45c6cd45",
   "replicates": 2000,
   "seed": 20261838,
-  "tie_rule": "first 64 SHA256 bits of original dataset::query_id, then depth, then instance index; original hash unchanged across resamples",
+  "tie_rule": "first 64 SHA256 bits of original dataset::query_id, then depth, then resampled instance index; original query hash unchanged across resamples",
   "legacy_DPA_max_abs_error": 1.4210854715202004e-14,
   "cached_IDR_preserved": true,
   "IDR_training_prediction_replay_calls": 0,
@@ -20,5 +21,5 @@
     8.359007484567897
   ],
   "api_calls": 0,
-  "scope": "Primary paired interval only; not evidence that all other policies use global hash."
+  "scope": "Primary paired IDR-minus-DPA interval for the current English V38 release. The cached frozen IDR bootstrap component is paired with the corrected DPA tie rule."
 }

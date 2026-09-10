@@ -7,3 +7,5 @@ The release has three levels:
 3. **Upstream regeneration.** Recreating benchmark retrieval and reader trajectories requires the original benchmark sources and provider configuration. It is outside the exact replay contract and is not required to reproduce the paper's allocation results.
 
 All allocation orders must satisfy strict prefix legality: a depth-2 action can enter the eligible set only after its depth-1 action has been selected. The evaluated budget is an exact quota over the released action pool.
+
+The trained `.joblib` estimators are local derived outputs and are intentionally excluded from version control. Releasing the frozen weights is unnecessary for the stated retraining contract.

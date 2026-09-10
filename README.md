@@ -45,9 +45,11 @@ src/idr_rag/          feature extraction, models, allocation, and metrics
 scripts/              replay, retraining, verification, and bootstrap utilities
 tools/                maintainer-only numeric artifact exporter
 artifacts/            public numeric ledgers and paper result files
-models/               retrained release estimators
+models/               local retraining audit output (weights are not versioned)
 tests/                tests of the paper's allocation invariants
 docs/                 data, reproducibility, and third-party notices
 ```
 
 The code is licensed under Apache-2.0. Benchmark content and any upstream model or software components remain under their original terms; see `docs/THIRD_PARTY_LICENSES.md`.
+
+Trained ExtraTrees weights are intentionally not released. The training inputs, deterministic feature construction, model hyperparameters, random seed, locked environment, and retraining audit are provided so the estimators can be regenerated locally.

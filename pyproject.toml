@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "idr-rag"
+version = "2.0.0"
+description = "Information-Deficit Routing for fixed-budget retrieval-augmented generation"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "joblib==1.4.2",
+  "numpy==1.26.4",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

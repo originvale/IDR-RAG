@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "IDR-RAG: Information-Deficit Routing for Fixed-Budget Retrieval"
+version: 2.0.0
+message: "If you use this software or the released paper artifacts, please cite the accompanying IDR-RAG paper."
+type: software
+authors:
+  - name: originvale
+repository-code: "https://github.com/originvale/IDR-RAG"
+license: Apache-2.0

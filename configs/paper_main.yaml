@@ -1,0 +1,9 @@
+python: "3.12"
+feature_dimension: 32
+paper_seed: 20260829
+trees: 350
+min_samples_leaf: 10
+budget_actions: 1800
+total_action_capacity: 3600
+budget_range: "0-50%"
+network_calls_for_replay: 0

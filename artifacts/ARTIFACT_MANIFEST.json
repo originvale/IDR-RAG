@@ -1,0 +1,32 @@
+{
+  "development_actions": 3600,
+  "evaluation_actions": 3600,
+  "feature_count": 32,
+  "inputs": {
+    "adaptive_actions_sha256": "3A1E1EC58DF6DDD4C745614366926D0A6C299C6D7770F5C573B59B43FCF02761",
+    "development_trajectory_sha256": "9359490FAB2D7166E094C7AEC8DAC4436428D747AE9AEDCE0884EEA2327C21F9",
+    "evaluation_trajectory_sha256": "9D0E311EF375F85776657D44AC10362A8D270F1EBED74DFEAE857BA5514A2A89",
+    "frozen_actions_sha256": "04F6BA520260D9DCB4B776D8B898FB728132A30A7EE8A661434E2630E805170E",
+    "mechanism_scores_sha256": "0976508B4582029FA916785F135BA2E2E908A3D21991A515B193F498F5C335AE",
+    "query_manifest_sha256": "A5056CA0AF4F126677C5112B6FDF878CAC76A42AD5068C0D0EEEEFF7E6D6310F"
+  },
+  "outputs": {
+    "development_actions_32d.csv": "ae9fcac03e97465ca008471af4da15a4c93683b5d347d93bd1d1a855d005cf20",
+    "evaluation_actions_32d.csv": "7cc805801084acb24ed38acacec6c289d7866c254737e6c559c58518534801bf",
+    "expected_results.json": "700ed1f1a091d860a0941084248191b9897397e9fdf1275944d566059d28fa9e",
+    "paper_results/budget_curves_m087.csv": "d8d9d47fd57c86fd04bc1aafd7846288daa3825222157930eb9db21834ca8023",
+    "paper_results/leave_one_dataset_out.csv": "78755ab474f5ac7918638193974030311ada7f0185565f3b7ca71ca0b0818b65",
+    "paper_results/primary_bootstrap_m087.csv": "5a377a0316645fcfcc082c16586544129ca736da378259dc684672a9202517ff",
+    "paper_results/primary_summary_m087.json": "17d1218aeb20c3ace7ae560510a9e9bf66836a84416a7bdbd443927ba4157911",
+    "paper_results/README.md": "f64b8fb5482959c362c39533e80f3bb8e8503cb63598876aef4979e3c49de890",
+    "paper_results/refit_50.csv": "0427b07c3cc469c0be790072c42a16bbfe99ecb82b6ee29fedcb23d41d9314e3",
+    "paper_results/resource_aubpc_m087.csv": "d8646cc366be0fa5f0fa4da249b9c8de5b4bbadd671124b6abbe38903dadb674",
+    "paper_results/table4_audit_m088.json": "fe2d3b701d15e931d43ee0b61066ce6d3852828739328e48043ed72b8b5bad1c",
+    "paper_results/table4_contrasts_m088.csv": "be3efd3330807a4f421dec8bd484cd7f113647e3a6df2b2a8ed1f95cc944c3c9",
+    "paper_results/table4_points_m088.csv": "09a392ff19050b34421374f12b4f46dfea3bac78f1d2cd917ef70d7c5f8b175a",
+    "query_manifest.csv": "a5056ca0af4f126677c5112b6fdf878cac76a42ad5068c0d0eeeeff7e6d6310f"
+  },
+  "privacy_contract": "identifiers, numeric states/outcomes, frozen scores and resource measurements only; no question, answer, reasoning, passage text, API metadata or local path",
+  "status": "PASS",
+  "public_file_count": 14
+}

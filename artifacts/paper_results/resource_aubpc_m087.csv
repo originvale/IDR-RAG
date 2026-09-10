@@ -1,0 +1,10 @@
+resource_axis,method,AUBPC_0_50_pp
+follow_up_actions,Static Path Commitment,52.38251404320988
+follow_up_actions,DPA,48.24140663580246
+follow_up_actions,IDR,55.72222484567901
+provider_tokens,Static Path Commitment,52.19925055555555
+provider_tokens,DPA,48.85059277777776
+provider_tokens,IDR,55.865493888888885
+latency_ms,Static Path Commitment,52.478255000000004
+latency_ms,DPA,48.416992777777764
+latency_ms,IDR,55.76404222222222

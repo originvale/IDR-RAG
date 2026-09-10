@@ -24,7 +24,7 @@ DPA  AUBPC_0_50 = 48.24140663580247
 IDR - DPA       =  7.480818209876539 percentage points
 ```
 
-## Retrain the two released estimators
+## Retrain the two estimators
 
 ```bash
 python scripts/train_models.py

@@ -4,6 +4,12 @@ Reproducibility package for **Information-Deficit Routing (IDR)**, a fixed-budge
 
 This repository contains the paper-facing implementation and numeric release assets for the English V38 manuscript. It is a clean research release; it is not a copy of the surrounding MBA workspace.
 
+## Architecture
+
+![Information-Deficit Routing architecture](docs/assets/idr_architecture.png)
+
+**Information-Deficit Routing.** Each query is represented by a 32-dimensional pre-action retrieval–reasoning state. IDR estimates the value of every currently legal next retrieval, assigns one unit of the shared budget to the highest-valued action, updates the selected query's state, and re-estimates its next legal action before returning it to the pool. A vector version is available as [PDF](docs/assets/idr_architecture.pdf).
+
 ## Reproduce the main table
 
 The main replay uses frozen numeric action ledgers and makes no network, retrieval, or language-model calls.
@@ -48,6 +54,7 @@ artifacts/            public numeric ledgers and paper result files
 models/               local retraining audit output (weights are not versioned)
 tests/                tests of the paper's allocation invariants
 docs/                 data, reproducibility, and third-party notices
+docs/assets/          paper architecture figure in PNG and vector PDF formats
 ```
 
 The code is licensed under Apache-2.0. Benchmark content and any upstream model or software components remain under their original terms; see `docs/THIRD_PARTY_LICENSES.md`.
